@@ -1,0 +1,256 @@
+.home {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-h {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.right-h{
+    flex: 1;
+    position: relative;
+    background-color: var(--orange);
+}
+
+.the-best-ad {
+    margin-top: 4rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content; 
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.the-best-ad>span {
+ z-index: 2;
+}
+
+.the-best-ad>div {
+    position: absolute;
+    background-color: var(--orange);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+
+.home-text>div:nth-of-type(3) {
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+.figures {
+    display: flex;
+    gap: 2rem;
+}
+
+.figures>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.figures>div>span:nth-of-type(1) {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+}
+
+.figures>div>span:nth-of-type(2){
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+}
+
+.home-buttons>:nth-child(1){
+    color: white;
+    background-color: var(--orange);
+    width: 8rem;
+}
+
+.home-buttons>:nth-child(2){
+    color: white;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid var(--orange);
+}
+
+.right-h>.btn {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    color: black;
+}
+
+.heart-likes {
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+ background-color: var(--darkGrey);
+ width: fit-content;
+ padding: 1rem;
+ align-items: start;
+ border-radius: 5px;
+ position: absolute;
+ right: 4rem;
+ top: 7rem;
+}
+
+.heart-likes > img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.heart-likes>:nth-child(2) {
+ color: var(--gray);
+}
+
+.heart-likes>:nth-child(3){
+    color: white;
+    font-size: 1.5rem;
+}
+
+.home-image {
+    position: absolute;
+    top: 8rem;
+    right: 6rem;
+    width: 35rem;
+}
+
+.chart {
+    display: flex;
+    gap:2rem;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    width: fit-content;
+    position: absolute;
+    top: 33rem;
+    right: 32rem;
+}
+
+.chart > img {
+    width: 3rem;
+}
+
+.chart > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chart > div > :nth-child(1){
+    color: var(--gray);
+}
+
+.chart > div > :nth-child(2) {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.home-blur {
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+    }
+    .home-blur {
+        width: 14rem;
+    }
+    .the-best-ad {
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+    .the-best-ad>span {
+        white-space: nowrap;
+    }
+    .home-text {
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-text>div:nth-of-type(3) {
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .home-buttons {
+        justify-content: center;
+    }
+    .figures>div>span:nth-of-type(1) {
+        font-size: large;
+        display: flex;
+    }
+    .figures>div>span:nth-of-type(2) {
+        font-size: small;
+    }
+    .right-rate {
+        position: relative;
+        background: none;
+    }
+    .heart-likes {
+        left: 1rem;
+        top: 2rem;
+    }
+    .chart {
+      position: relative;
+      top: 3rem;
+      left: 2rem;
+    }
+    .chart>img {
+        width: 2rem;
+    }
+    .chart>div>:nth-child(2) {
+        color: white;
+        font-size: 1rem;
+    }
+    .home-image {
+        position: relative;
+        width: 25rem;
+        height: 25rem;
+        left: 2rem;
+        top: 4rem;
+        align-self: center;
+    }
+    .right-h {
+        background: none;
+        position: relative;
+    }
+}  

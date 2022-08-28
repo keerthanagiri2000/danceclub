@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo {
+    display: flex;
+}
+.header-logo > img {
+    height: 4rem
+}
+.header-name {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+    color: white;
+}
+.header-name > p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Revalia', cursive;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.header-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.header-link:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .header>:nth-child(2) {
+     position: fixed;
+     right: 2rem;
+     z-index: 99;
+    }
+    .header-menu {
+     flex-direction: column;
+     background-color: var(--appColor);
+     padding: 2rem;
+    }
+    
+}
